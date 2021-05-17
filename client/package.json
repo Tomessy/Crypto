@@ -9,8 +9,7 @@
     "react-scripts": "4.0.3"
   },
   "scripts": {
-    "start": "echo 'api is starting...' && cd api && npm install && npm run start",
-    "heroku-postbuild": "echo 'frontend is starting...' && cd client && npm install && npm run build"
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
