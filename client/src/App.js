@@ -28,7 +28,11 @@ export default class Crypto extends Component {
 
     render() {
     return (
-        <Body data={this.state.coinsArray}/>
+      <>
+        { this.state.loading && <h3 className="gridPadding poweredBy">Loading</h3> }
+
+          <Body loading={this.state.loading} data={this.state.coinsArray}/>
+      </>
     );
   }
 }

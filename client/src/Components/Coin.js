@@ -1,29 +1,28 @@
 import React from 'react';
 
 const Coin = props => {
-    let style = ["col", "textPadding"]
-    let price
-    let currentPrice = props.currentPrice
-    let change = props.currentPrice.split(".")
+    let style = ["col", "textPadding"];
+    let price;
+    let currentPrice = props.currentPrice;
+    let change = props.currentPrice.split(".");
     
     if (change[1] === undefined) {
-        price = currentPrice += ".00"
+        price = currentPrice += ".00";
     } else if (change[1].length === 1) {
-        price = currentPrice += "0"
+        price = currentPrice += "0";
 
     } else if (change[1].length >= 5) {
-        // console.log(change[1].substring(0, 4))
-        price = `${change[0]}.${change[1].substring(0, 4)}`
+        price = `${change[0]}.${change[1].substring(0, 4)}`;
     } else {
-        price = currentPrice
+        price = currentPrice;
     }
 
     if(props.percentChange > 0){
-        style.push("green")
+        style.push("green");
     } else if(props.percentChange === 0) {
-        style.push("grey")
+        style.push("grey");
     } else {
-        style.push("red")
+        style.push("red");
     }
 
     return(

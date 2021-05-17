@@ -31,8 +31,6 @@ const Body = props => {
                     <div className="col textPadding">24 hour change</div>
                 </div>
                 { coins }
-                <h3 className="gridPadding poweredBy">Loading</h3>
-
                 <h3 className="gridPadding poweredBy">Powered by CoinGecko API</h3>
             </div>
     );
