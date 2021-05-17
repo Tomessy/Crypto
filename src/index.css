@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Nav */
+
+.navBar {
+  position: sticky;
+  top: 0;
+}
+
+nav .navContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+  align-items: center;
+  list-style: none;
+  background-color: #ff8c00;
+  margin: 0;
+  padding: 20.5px 0px;
+} 
+
+.navText {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+  border-bottom: 1.5px solid whitesmoke;
+}
+
+.navText:hover{
+  color: #900;
+  border-bottom: 3px solid #900;
+} 
+
+nav a {
+  transition: all 0.5s;
+}
+
+/* Crypto */
+
+.gridPadding{
+  padding: 22px 0px;
+  text-align: center;
+  background-color: rgb(235, 235, 235);
+}
+
+div .heading{
+  font-weight: bold;
+  font-size: large;
+  background-color: rgb(200, 200, 200);
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.textPadding{
+  padding: 1px;
+  font-weight: 500;
+  font-size: large;
+  color: rgb(50, 50, 50);
+  margin: 0;
+}
+
+.col{
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex-basis: 0;
+  flex-grow: 1;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.small,
+.medium{
+    display: none;
+}
+
+.card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: 0.25rem;
+}
+
+.poweredBy{
+  margin: 0;
+  color: rgb(50, 50, 50);
+  padding: 22.6px 0px;
+}
+.green{
+  color: green;
+}
+
+.grey{
+  color: grey;
+}
+
+.red{
+  color: red;
+}
+
+@media(min-width: 415px) {
+    .small{
+        display: block;
+    }
+    
+}
+
+@media(min-width: 640px) {
+  div .heading{
+    padding: 22px 0px;
+  }
+}
+
+@media(min-width: 675px) {
+    .medium{
+        display: block;
+    }
+    div .heading{
+      padding: 10px 0px;
+    }
+    .gridPadding{
+      padding: 17.5px 0px;
+    }
+}
+
+@media(min-width: 948px){
+  div .heading{
+    padding: 22px 0px;
+  }
+}
