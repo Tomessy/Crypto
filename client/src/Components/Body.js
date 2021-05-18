@@ -4,6 +4,7 @@ import Coin from "./Coin"
 
 const Body = props => {
 
+    const loading = props.loading;
     const results = props.data;
     let coins = results.map(coin =>
         
@@ -31,6 +32,8 @@ const Body = props => {
                     <div className="col textPadding">24 hour change</div>
                 </div>
                 { coins }
+                { loading && <h3 className="gridPadding poweredBy">Loading</h3> }
+
                 <h3 className="gridPadding poweredBy">Powered by CoinGecko API</h3>
             </div>
     );
